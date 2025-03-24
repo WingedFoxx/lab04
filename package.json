@@ -1,0 +1,23 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "singers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "html-validate ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wingedfoxx\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cgithub.io/wingedfoxx.git"
+  },
+  "author": "wingedfoxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wingedfoxx\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cgithub.io/wingedfoxx/issues"
+  },
+  "homepage": "https://github.com/wingedfoxx\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cgithub.io/wingedfoxx#readme",
+  "dependencies": {
+    "html-validate": "^9.5.2"
+  }
+}
