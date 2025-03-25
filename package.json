@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/wingedfoxx\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cgithub.io/wingedfoxx#readme",
   "dependencies": {
-    "html-validate": "^9.5.2"
-  }
+    "html-validate": "^9.5.2",
+    "sass": "^1.86.0"
+  },
+  "keywords": []
 }

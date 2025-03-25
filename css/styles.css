@@ -1,0 +1,52 @@
+img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.more:hover {
+  background-color: lightblue;
+}
+
+.singers-table:hover {
+  background-color: lightblue;
+}
+
+.singers-table:hover {
+  background-color: lightgreen;
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.artist-photos-row1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.artist-photos-row2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.artist-photos-row3 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .interactive {
+    display: none;
+  }
+  .singers-table:hover {
+    background-color: transparent;
+  }
+  .photos {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

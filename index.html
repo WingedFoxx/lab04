@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Lab 2 task</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <article>
@@ -13,7 +14,7 @@
                 Let's have a look on the best singers, according to <em>Billboard 100</em>, their nationality, and some of their songs!
             </p>
             <h2>Top 10 singers this week</h2>
-            <table>
+            <table class="singers-table">
                 <caption>
                   Billboard Artist 100's top 10
                 </caption>
@@ -77,13 +78,35 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="artist-photos-row1"></div>
+                <img class="artist-photo" src="images/kendrick-lamar.jpg" alt="Kendrick Lamar">
+                <img class="artist-photo" src="images/morgan-wallen.jpg" alt="Morgan Wallen">
+                <img class="artist-photo" src="images/tate-mcrae.jpg" alt="Tate McRae">
+                <img class="artist-photo" src="images/sabrina-carpenter.jpg" alt="Sabrina Carpenter">
+            </div>
+            <div class="artist-photos-row2">
+                <img class="artist-photo" src="images/sza.jpg" alt="SZA">
+                <img class="artist-photo" src="images/drake.jpg" alt="Drake">
+                <img class="artist-photo" src="images/billie-eilish.jpg" alt="Billie Eilish">
+                <img class="artist-photo" src="images/lisa.jpg" alt="LISA">
+            </div>
+            <div class="artist-photos-row3">
+                <img class="artist-photo" src="images/chappell-roan.jpg" alt="Chappell Roan">
+                <img class="artist-photo" src="images/bruno-mars.jpg" alt="Bruno Mars">
+            </div>
             <p> Let's have a look at some of them's best songs. I picked <strong>Bruno Mars</strong> for him because I find him the most recognisable between generations.</p>
             <h3> Bruno Mars' 10 best songs (According to Billboard)</h3>
-            <img
-                class="artist"
-                src="bruno-mars.jpg"
-                alt="Bruno Mars' photo">
-            <ol type="I">
+            <div class="photos">
+                <img
+                    class="artist"
+                    src="bruno-mars.jpg"
+                    alt="Bruno Mars' photo">
+                <img
+                    class="artist"
+                    src="bruno-mars-2.jpg"
+                    alt="Bruno Mars' photo 2">
+            </div>
+            <ol type="I" class="songs">
                 <li>Uptown Funk! (Mark Ronson feat. Bruno Mars)</li>
                 <li>Just the Way You Are</li>
                 <li>That’s What I Like</li>
@@ -95,7 +118,7 @@
                 <li>It Will Rain</li>
                 <li>24K Magic</li>
             </ol>
-            <details>
+            <details class="more">
                 <summary>Read more about Bruno Mars...</summary>
                 Peter Gene Hernandez (born October 8, 1985), known professionally as Bruno Mars, is an American singer-songwriter, musician, and record producer, usually accompanied by his band, the Hooligans. Raised in Honolulu, he moved to Los Angeles in 2003 to pursue a musical career.
             </details>
@@ -104,7 +127,7 @@
                 Click on the guitar to see accoustic version of 'Birds of the feather' by Billie Eilish,
                 click on the CD to see its studio version and click on the microphone to see it live record.
             </p>
-            <img src="guitar-cd-mic.jpg" alt="Guitar, CD and microphone" usemap="#song-map">
+            <img class="interactive" src="guitar-cd-mic.jpg" alt="Guitar, CD and microphone" usemap="#song-map">
             <map name="song-map">
                 <area shape="rect" coords="320,150,500,800" alt="microphone" href="https://www.youtube.com/watch?v=4te_d5JtvE8">
                 <area shape="rect" coords="550,200,800,700" alt="guitar" href="https://www.youtube.com/watch?v=fOAIrUZbOwo">
