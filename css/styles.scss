@@ -1,3 +1,13 @@
+$bg-color1: lightblue;
+$bg-color2: lightgreen;
+$link-color: #5213F2;
+$text-color: #c0589b;
+
+.first-paragraph {
+    color: $text-color;
+    font-size: 1.5em;
+}
+
 img {
     width: auto;
     height: auto;
@@ -5,34 +15,36 @@ img {
 }
 
 .more:hover {
-    background-color: lightblue;
+    background-color: $bg-color1
   }  
 
 .singers-table:hover {
-    background-color: lightblue;
+    background-color: $bg-color2
 }
 
-.singers-table:hover {
-    background-color: lightgreen;
+@mixin align($direction) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $direction;
+    @media(max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
-.photos {
-    display: flex;
-    flex-direction: row; // horizontally by default
-    justify-content: space-evenly;
+.photos-row1 {
+    @include align(flex-end);
 }
 
-.artist-photos-row1 {
-    display: flex;
-    justify-content: flex-start;
+.photos-row2 {
+    @include align(flex-start);
 }
-.artist-photos-row2 {
-    display: flex;
-    justify-content: flex-end;
+
+.photos-row3 {
+    @include align(center);
 }
-.artist-photos-row3 {
-    display: flex;
-    justify-content: center;
+
+.bruno-mars-photos {
+    @include align(space-evenly);
 }
 
 @media (max-width: 800px) {
@@ -42,7 +54,23 @@ img {
     .singers-table:hover {
         background-color: transparent;
     }
-    .photos {
-        flex-direction: column; // vertically when window width is less than 800px
+}
+
+@mixin button-style($bg, $text) {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: $bg;
+    color: $text;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: darken($bg, 20%); // Zamiast color.scale()
     }
+}
+
+.button-primary {
+    @include button-style($link-color, #fff);
 }
