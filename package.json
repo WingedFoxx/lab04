@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "html-validate ."
+    "validate": "html-validate .",
+    "build-css": "npx @tailwindcss/cli -i css/styles-input.css -o styles.css",
+    "build-css-min": "npx tailwindcss -i css/styles-input.css -o styles.css --minify"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,16 @@
   },
   "homepage": "https://github.com/wingedfoxx\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cgithub.io/wingedfoxx#readme",
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.17",
+    "@tailwindcss/postcss": "^4.0.17",
     "html-validate": "^9.5.2",
-    "sass": "^1.86.0"
+    "sass": "^1.86.0",
+    "tailwindcss": "^4.0.17"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
+  }
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Lab 2 task</title>
+        <title>Lab 4 task</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <article>
             <label for="task">Task progress:</label>
-            <progress id="task" max="100" value="33">33%</progress>
-            <div class="first-paragraph">
+            <progress id="task" max="100" value="100">100%</progress>
+            <div class="text-sky-500">
             <h1>Singing</h1>
             <p>
                 Singing is probably the most exciting thing a human can do. Imagine having a musical instrument in your own body!
@@ -16,93 +16,96 @@
             </p>
             </div>
             <h2>Top 10 singers this week</h2>
-            <table class="singers-table">
-                <caption>
-                  Billboard Artist 100's top 10
-                </caption>
-                <thead>
-                    <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Artist</th>
-                        <th scope="col">Last week</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Kendrick Lamar</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Morgan Wallen</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Tate McRae</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Sabrina Carpenter</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>SZA</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Drake</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Billie Eilish</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>LISA</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <td>Chappell Roan</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10</th>
-                        <td>Bruno Mars</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>More artists: <a class="button-primary" href="https://www.billboard.com/charts/artist-100/">https://www.billboard.com/charts/artist-100/</a></p>
-            <div class="photos-row1">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="table-auto text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <caption class="text-xs text-gray-600 dark:text-gray-400">
+                    Billboard Artist 100's top 10
+                    </caption>
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">No</th>
+                            <th scope="col" class="px-6 py-3">Artist</th>
+                            <th scope="col" class="px-6 py-3">Last week</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">1</th>
+                            <td class="px-6 py-4">Kendrick Lamar</td>
+                            <td class="px-6 py-4">2</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">2</th>
+                            <td class="px-6 py-4">Morgan Wallen</td>
+                            <td class="px-6 py-4">4</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">3</th>
+                            <td class="px-6 py-4">Tate McRae</td>
+                            <td class="px-6 py-4">1</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">4</th>
+                            <td class="px-6 py-4">Sabrina Carpenter</td>
+                            <td class="px-6 py-4">3</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">5</th>
+                            <td class="px-6 py-4">SZA</td>
+                            <td class="px-6 py-4">5</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">6</th>
+                            <td class="px-6 py-4">Drake</td>
+                            <td class="px-6 py-4">6</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">7</th>
+                            <td class="px-6 py-4">Billie Eilish</td>
+                            <td class="px-6 py-4">8</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">8</th>
+                            <td class="px-6 py-4">LISA</td>
+                            <td class="px-6 py-4">-</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">9</th>
+                            <td class="px-6 py-4">Chappell Roan</td>
+                            <td class="px-6 py-4">7</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row">10</th>
+                            <td class="px-6 py-4">Bruno Mars</td>
+                            <td class="px-6 py-4">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>More artists: <a class="text-lime-500/70" href="https://www.billboard.com/charts/artist-100/">https://www.billboard.com/charts/artist-100/</a></p>
+            <div class="flex flex-row">
                 <img src="images/kendrick-lamar.jpg" alt="Kendrick Lamar">
                 <img src="images/morgan-wallen.jpg" alt="Morgan Wallen">
                 <img src="images/tate-mcrae.jpg" alt="Tate McRae">
                 <img src="images/sabrina-carpenter.jpg" alt="Sabrina Carpenter">
             </div>
-            <div class="photos-row2">
-                <img src="images/sza.jpg" alt="SZA">
-                <img src="images/drake.jpg" alt="Drake">
-                <img src="images/billie-eilish.jpg" alt="Billie Eilish">
-                <img src="images/lisa.jpg" alt="LISA">
+            <div class="flex flex-col">
+                <img class="w-40 h-auto" src="images/sza.jpg" alt="SZA">
+                <img class="w-40 h-auto" src="images/drake.jpg" alt="Drake">
+                <img class="w-40 h-auto" src="images/billie-eilish.jpg" alt="Billie Eilish">
+                <img class="w-40 h-auto" src="images/lisa.jpg" alt="LISA">
             </div>
-            <div class="photos-row3">
+            <div class="flex flex-none">
                 <img src="images/chappell-roan.jpg" alt="Chappell Roan">
                 <img src="images/bruno-mars.jpg" alt="Bruno Mars">
             </div>
-            <p> Let's have a look at some of them's best songs. I picked <strong>Bruno Mars</strong> for him because I find him the most recognisable between generations.</p>
+            <p class="text-fuchsia-600"> Let's have a look at some of them's best songs. I picked <strong>Bruno Mars</strong> for him because I find him the most recognisable between generations.</p>
             <h3> Bruno Mars' 10 best songs (According to Billboard)</h3>
-            <div class="bruno-mars-photos">
+            <div class="flex flex-auto">
                 <img
                     src="bruno-mars.jpg"
-                    alt="Bruno Mars' photo">
+                    alt="Bruno Mars' photo"
+                    class="animate-ping">
                 <img
                     src="bruno-mars-2.jpg"
                     alt="Bruno Mars' photo 2">
@@ -119,12 +122,12 @@
                 <li>It Will Rain</li>
                 <li>24K Magic</li>
             </ol>
-            <details class="more">
+            <details class="bg-lime-200">
                 <summary>Read more about Bruno Mars...</summary>
                 Peter Gene Hernandez (born October 8, 1985), known professionally as Bruno Mars, is an American singer-songwriter, musician, and record producer, usually accompanied by his band, the Hooligans. Raised in Honolulu, he moved to Los Angeles in 2003 to pursue a musical career.
             </details>
             <h2>Performing live, accoustic and at studio</h2>
-            <p>The song differs whether it's its studio version, accoustic version or live version.
+            <p class="bg-amber-300">The song differs whether it's its studio version, accoustic version or live version.
                 Click on the guitar to see accoustic version of 'Birds of the feather' by Billie Eilish,
                 click on the CD to see its studio version and click on the microphone to see it live record.
             </p>
@@ -135,7 +138,7 @@
                 <area shape="circle" coords="150,700,80" alt="CD" href="https://www.youtube.com/watch?v=V9PVRfjEBTI">
             </map>
             <h4>Artist form</h4>
-            <p>Let's find out if the Billboard 100's Artists are listed well. Here, you can vote for your favourite one and their song!</p>
+            <p class="bg-teal-100">Let's find out if the Billboard 100's Artists are listed well. Here, you can vote for your favourite one and their song!</p>
             <form method="get" class="artist-form">
                 <div class="artist-form">
                     <label for="artist-select">Pick your favourite artist</label>
@@ -158,7 +161,7 @@
                     <input type="text" name="song" id="song" required>
                 </div>
                 <div class="artist-form">
-                    <button class="button-primary" type="submit">Submit!</button>
+                    <button class="bg-cyan-500 shadow-lg shadow-cyan-500/50" type="submit">Submit!</button>
                 </div>
             </form>
         </article>
